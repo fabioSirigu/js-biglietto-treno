@@ -1,0 +1,27 @@
+main {
+      height: 100vh;
+      background-image: url(../img/vecteezy_travel-icons-set-flat-design-colorful-airplane-train-and_6947449.jpg);
+      background-position: center;
+      background-size: cover;
+}
+
+main div {
+      width: 600px;
+      height: 400px;
+      background-color: rgba(16, 0, 160, 0.712);
+      border: 1px solid gray;
+      border-radius: 1rem;
+}
+
+h1 {
+      font-size: 60px;
+      font-weight: 800;
+}
+#final_price {
+      font-size: x-large;
+      font-weight: 800;
+      width: 200px;
+      border: 3px solid;
+      border-radius: 1rem;
+      background-color: lightgray;
+}

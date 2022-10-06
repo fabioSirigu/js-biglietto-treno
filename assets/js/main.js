@@ -25,12 +25,17 @@ console.log(salesOver);
 
 if (userAge < 18) {
       const priceTicketMinors = Number(priceTicket - salesMinors);
-      console.log(priceTicketMinors);
+      console.log(Math.round(priceTicketMinors * 100) / 100);
+      document.getElementById("final_price").innerHTML = `${priceTicketMinors + "€"}`;
+
 } else if (userAge > 65) {
       const priceTicketOver = Number(priceTicket - salesOver);
-      console.log(priceTicketOver);
+      console.log(Math.round(priceTicketOver * 100) / 100);
+      document.getElementById("final_price").innerHTML = `${priceTicketOver + "€"}`;
 } else {
-      console.log(priceTicket);
+      console.log(Math.round(priceTicket * 100) / 100);
+      document.getElementById("final_price").innerHTML = `${priceTicket + "€"}`;
+
 }
 
 // L'output del prezzo finale va messo fuori in forma umana (con massimo due decimali, per indicare centesimi sul prezzo).
