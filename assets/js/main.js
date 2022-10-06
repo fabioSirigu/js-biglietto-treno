@@ -25,16 +25,16 @@ console.log(salesOver);
 
 if (userAge < 18) {
       const priceTicketMinors = Number(priceTicket - salesMinors);
-      console.log(Math.round(priceTicketMinors * 100) / 100);
-      document.getElementById("final_price").innerHTML = `${priceTicketMinors + "€"}`;
+      console.log(priceTicketMinors.toFixed( 2 ));
+      document.getElementById("final_price").innerHTML = `${priceTicketMinors.toFixed( 2 )} "€"`;
 
 } else if (userAge > 65) {
       const priceTicketOver = Number(priceTicket - salesOver);
-      console.log(Math.round(priceTicketOver * 100) / 100);
-      document.getElementById("final_price").innerHTML = `${priceTicketOver + "€"}`;
+      console.log(priceTicketOver.toFixed( 2 ));
+      document.getElementById("final_price").innerHTML = `${priceTicketOver.toFixed( 2 )} "€"`;
 } else {
-      console.log(Math.round(priceTicket * 100) / 100);
-      document.getElementById("final_price").innerHTML = `${priceTicket + "€"}`;
+      console.log(priceTicket.toFixed( 2 ));
+      document.getElementById("final_price").innerHTML = `${priceTicket.toFixed( 2 )} "€"`;
 
 }
 
