@@ -23,15 +23,16 @@ console.log(salesMinors);
 const salesOver = Number(priceTicket / 100) * 40;
 console.log(salesOver);
 
+
 if (userAge < 18) {
-      finalPrice = Number(priceTicket - salesMinors);
-      console.log(finalPrice.toFixed( 2 ));
+      priceTicket = Number(priceTicket - salesMinors);
+      console.log(priceTicket.toFixed( 2 ));
 } else if (userAge > 65) {
-      finalPrice = Number(priceTicket - salesOver);
-      console.log(finalPrice.toFixed( 2 ));
+      priceTicket = Number(priceTicket - salesOver);
+      console.log(priceTicket.toFixed( 2 ));
 }
 
-document.getElementById("final_price").innerHTML = `${finalPrice.toFixed( 2 )} €`;
+document.getElementById("final_price").innerHTML = `${priceTicket.toFixed( 2 )} €`;
 
 // L'output del prezzo finale va messo fuori in forma umana (con massimo due decimali, per indicare centesimi sul prezzo).
 // Questo richiederà un minimo di ricerca, oltre alla ricerca da fare per ricordarsi come calcolare uno sconto (Googlate qulcosa del tipo: come si calcola lo sconto? e cercate una risorsa che vi possa aiutare a capire cosa fare)
